@@ -1,6 +1,9 @@
 exec bronze.load_bronze
-
-
+-- ===========================================
+-- --create the tables 
+-- 	1. truncate the tables
+-- 	2. bulk in sert from the csv
+-- ============================================
 create or alter  procedure bronze.load_bronze as
  begin 
 	declare @starttime datetime,@endtime datetime;
